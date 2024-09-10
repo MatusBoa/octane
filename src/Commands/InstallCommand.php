@@ -22,7 +22,8 @@ class InstallCommand extends Command
      * @var string
      */
     public $signature = 'octane:install
-                    {--server= : The server that should be used to serve the application}';
+                    {--server= : The server that should be used to serve the application}
+                    {--keep-config : Do not overwrite the existing configuration}';
 
     /**
      * The command's description.
@@ -53,7 +54,10 @@ class InstallCommand extends Command
             if ($installed) {
                 $this->updateEnvironmentFile($server);
 
-                $this->callSilent('vendor:publish', ['--tag' => 'octane-config', '--force' => true]);
+                $this->callSilent('vendor:publish', [
+                    '--tag' => 'octane-config',
+                    '--force' => ! $this->option('keep-config'),
+                ]);
 
                 $this->components->info('Octane installed successfully.');
                 $this->newLine();
