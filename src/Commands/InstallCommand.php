@@ -82,6 +82,7 @@ class InstallCommand extends Command
                     PHP_EOL.'OCTANE_SERVER='.$server.PHP_EOL,
                 );
             } else {
+                $this->newLine();
                 $this->components->warn('Please adjust the `OCTANE_SERVER` environment variable.');
             }
         }
