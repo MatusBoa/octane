@@ -1,6 +1,34 @@
 # Release Notes
 
-## [Unreleased](https://github.com/laravel/octane/compare/v2.5.4...2.x)
+## [Unreleased](https://github.com/laravel/octane/compare/v2.6.0...2.x)
+
+## [v2.6.0](https://github.com/laravel/octane/compare/v2.5.9...v2.6.0) - 2024-11-25
+
+* [2.x] Supports PHP 8.4 for Roadrunner and FrankenPHP by [@crynobone](https://github.com/crynobone) in https://github.com/laravel/octane/pull/964
+* [2.x] Supports PHP 8.4 for `swoole` by [@crynobone](https://github.com/crynobone) in https://github.com/laravel/octane/pull/966
+* FrankenPHP: Allow running Octane without artisan command by [@AlliBalliBaba](https://github.com/AlliBalliBaba) in https://github.com/laravel/octane/pull/968
+
+## [v2.5.9](https://github.com/laravel/octane/compare/v2.5.8...v2.5.9) - 2024-10-06
+
+* Git ignore the `**/caddy` directories by [@maartenpaauw](https://github.com/maartenpaauw) in https://github.com/laravel/octane/pull/960
+
+## [v2.5.8](https://github.com/laravel/octane/compare/v2.5.7...v2.5.8) - 2024-10-01
+
+* [2.x] Supports Laravel Prompts 0.2 and 0.3 by [@webard](https://github.com/webard) in https://github.com/laravel/octane/pull/956
+
+## [v2.5.7](https://github.com/laravel/octane/compare/v2.5.6...v2.5.7) - 2024-09-27
+
+* Update logo to support dark/light theme by [@milewski](https://github.com/milewski) in https://github.com/laravel/octane/pull/958
+* Fixed host argument to use the getHost() function by [@elomonaco](https://github.com/elomonaco) in https://github.com/laravel/octane/pull/957
+
+## [v2.5.6](https://github.com/laravel/octane/compare/v2.5.5...v2.5.6) - 2024-09-24
+
+* Fix Memory Exhaustion in ConvertSwooleRequestToIlluminateRequest by Cleaning Up Unused Variables by [@jbidad](https://github.com/jbidad) in https://github.com/laravel/octane/pull/953
+
+## [v2.5.5](https://github.com/laravel/octane/compare/v2.5.4...v2.5.5) - 2024-09-11
+
+* Fix: Removes dd() workaround for Frankenphp. by [@AlliBalliBaba](https://github.com/AlliBalliBaba) in https://github.com/laravel/octane/pull/945
+* Add keep-config option to install command by [@MatusBoa](https://github.com/MatusBoa) in https://github.com/laravel/octane/pull/946
 
 ## [v2.5.4](https://github.com/laravel/octane/compare/v2.5.3...v2.5.4) - 2024-08-09
 
